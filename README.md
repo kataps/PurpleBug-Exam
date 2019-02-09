@@ -19,7 +19,12 @@ The user will receive order summary and verification links via email within 5 mi
 Place this project in your htdocs/ or public_html/
 
 Edit the credentials in config/database.php
-
+```php
+$this->host="localhost";
+$this->username="root";//
+$this->password="";
+$this->dbname="preorder_db";
+```
 import the database config/preorder_db.sql to your mysql database system
 
 The UI is user Friendly and responsive.
