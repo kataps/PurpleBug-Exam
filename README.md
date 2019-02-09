@@ -11,7 +11,7 @@ The user will receive order summary and verification links via email within 5 mi
 ## Requirements 
 -webserver that supports php
 
--php mail() function enabled.
+-SMTP server and php mail() function enabled.
 
 -mysql database system
   
