@@ -1,0 +1,161 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#EEEEEE;
+	font:15px/1.5 'Arial';
+	/*background:url('../img/bg.png');*/
+	background-color:#222222;
+
+}
+
+/*global*/
+
+.container{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+ul{
+	margin:0;
+	list-style: none;
+}
+li{
+	margin:0;
+}.btn_v{
+  background-color:#8F3D94;
+  color:white;
+  padding:10px 20px 10px 20px;
+  border-radius:5px;
+  border:0;
+
+}
+
+
+
+/*header*/
+header{
+	padding-top:15px;
+	background-color:white;
+	min-width:70px;
+	border-bottom:4px solid #8F3D94;	
+}
+header #branding img{
+	 max-width: 50px;
+	 position: relative;
+	 top:10px;
+
+}
+#branding h1{
+	 margin:0;
+}
+
+header #branding{
+	float:left;
+}
+
+
+
+/*article*/
+article{
+	float:left;
+	width: 50%;
+	margin-top:10px;
+	padding:0;
+
+
+}
+article section{
+
+
+
+	float:left;
+	background-color:white;
+	padding:5px;
+	width: 44%;
+	margin-bottom:5px;
+	min-height: 200px;
+	margin-left:10px;
+	padding:10px;
+	border-radius: 5px;
+
+	
+}
+article section ul{
+	list-style: none;
+}
+
+/*aside */
+aside{
+	
+	margin-top:10px;
+	float:right;
+	width: 50%;
+}
+#veggies-section{
+
+	background-color:white;
+	float:left;
+	width: 45%;
+	margin-right:5px;
+	padding:12px;
+}
+#summary{
+	background-color:white;
+	padding:12px;
+	width: 45%;
+	margin-left:5px;
+	float:left;
+	
+}
+#summary,#veggies-section{
+	height: 423px;
+	border-radius: 5px;
+
+}
+#summary label{
+	display: block;
+}
+#summary input{
+	padding:10px;
+	width: 90%;
+}
+#submitform-1{
+	position:absolute;
+
+}
+footer{
+	margin-top:60px;
+	background-color:#8F3D94;
+	color:white;
+	text-align:center;
+	padding:20px;
+}
+
+
+/*media Queries*/
+
+@media(max-width: 768px){
+	article,
+	article section,
+	#summary,#veggies-section,
+	aside,aside section{
+		float:none;
+		width: 100%;
+		margin:0;
+		margin-bottom:5px;
+		margin-bottom:5px;
+		
+		text-align:left;
+	}
+	#summary,#veggies-section{
+		padding:4px;
+		display: block;
+	}
+	.container{
+		width: 100%;
+		margin:auto;
+	}header{
+		margin-bottom:5px;
+	}
+
+}
