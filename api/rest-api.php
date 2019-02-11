@@ -126,8 +126,8 @@ class Products extends Database {
 					die();
 					exit();
 				 }else{
-				 	array("Something went wrong when updating the status");
-				 	 echo json_encode($string_message);
+				 	
+				 	 echo json_encode(array("Something went wrong when updating the status"));
 				 }
 			}else{
 
@@ -154,8 +154,8 @@ class Products extends Database {
 					die();
 					exit();
 				 }else{
-				 	array("Something went wrong while canceling your order");
-				 	 echo json_encode($string_message);
+				 	
+				 	 echo json_encode(array("Something went wrong while canceling your order"));
 				 }
 			}else{
 
@@ -176,6 +176,8 @@ if(isset($_GET['oid']) && isset($_GET['action']) && isset($_GET['token'])){
 		$sanwiches->verify_order($_GET['oid'],$_GET['token']);
 	}else if($_GET['action']=="cancel"){
 		$sanwiches->cancel_order($_GET['oid'],$_GET['token']);
+	}else{
+	 	echo json_encode(array("Unknown action!"));
 	}
 
 
